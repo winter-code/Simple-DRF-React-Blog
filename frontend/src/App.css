@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  margin: 5rem;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.listCon{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading{
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.list{
+  width: 50%;
+  align-self: center;
+  padding: .5rem;
+  margin: .5rem 1rem;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.list:hover{
+  box-shadow: 1px 1px 1px black;
+}
+
+.blog{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.blogTitle{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.blog p{
+  font-size: 2rem;
+}
+
+.data{
+  width: 50%;
+  align-self: center;
+  margin: 1rem;
+}
