@@ -24,7 +24,7 @@ class Blog extends Component {
         
         return (
             <div className="blog">
-                <div className="blogTitle">blog</div>
+                <div className="blogTitle"> Blog Post </div>
                 {this.state.blogData?(
                     <>
                         <p>{this.state.blogData.title}</p>
