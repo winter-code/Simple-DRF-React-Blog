@@ -6,7 +6,7 @@ import List from "../containers/List";
 const routes = () => {
     return (
         <Switch>
-            <Route path="/blog/;id" component={Blog} ></Route>
+            <Route path="/blog/:id" component={Blog} ></Route>
             <Route path="/" component={List} ></Route>
         </Switch>
     );
