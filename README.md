@@ -1,6 +1,6 @@
 # Simple-DRF-React-Blog
 
-Fork the repo and clone it in your local machine.
+Fork the repo and clone it in your machine.
 ## Django-setup
 ```
 virtualenv env
@@ -10,12 +10,13 @@ virtualenv env
 source env\bin\activate
 pip install -r requirements.txt
 ```
-Start backend server at 8000, using -
+Start backend server at 8000 after moving to project folder, using -
 ```
 python manage.py runserver
 ```
 
 ## React-setup
+Move to frontend folder, then
 ```
 npm init -y
 npm install
