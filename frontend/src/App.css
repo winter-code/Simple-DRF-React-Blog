@@ -38,6 +38,11 @@
   box-shadow: 1px 1px 1px black;
 }
 
+.img:hover{
+  box-shadow: rgba(1px,1px,1px,0.1);
+  transition: 1px ;
+}
+
 .blog{
   display: flex;
   justify-content: center;
@@ -48,14 +53,39 @@
 .blogTitle{
   font-size: 2rem;
   font-weight: 700;
+  background-color:   rgb(255,165,0, 0.6);
+  width: 59%;
+  align-self: center;
+  text-align: left;
+  padding-left: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .blog p{
   font-size: 2rem;
 }
 
+#pb {
+  background-color:rgba(173, 216, 240,0.3);
+  width: 59%;
+  text-align: left;
+  align-self: center;
+  padding-left: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.H{
+  align-self: center;
+}
 .data{
   width: 50%;
   align-self: center;
-  margin: 1rem;
+  text-align: left;
+  padding: 2rem;
+  
+  background-color: rgb(176,200,220, 0.1);
+  width: 59%;
+  
 }

@@ -12,7 +12,7 @@ class Blog extends Component {
     }
 
     componentDidMount(){
-        Axios.get('http://localhost:8000/posts/view/'+this.props.location.state.id)
+        Axios.get('http://localhost:8000/blog/'+this.props.match.params.id)
         .then(data=>{
             this.setState({
                 blogData: data.data
@@ -20,19 +20,32 @@ class Blog extends Component {
         })
     }
 
+//     componentDidUpdate (prevProps, prevState) {
+//   // update state 
+// }
+
     render() { 
         
         return (
             <div className="blog">
-                <div className="blogTitle">blog</div>
-                {this.state.blogData?(
-                    <>
-                        <p>{this.state.blogData.title}</p>
+                <div className="blogTitle">
+                        
+                        BLOG POST 
+                        
+                        </div>
+                        {this.state.blogData?(
+                            <>
+                             
+                        <p id="pb">{this.state.blogData.title}</p>
+                        <hr className="H" width="59%" />
+                        
+
                         <div className="data">
                             {this.state.blogData.content}
                         </div>
                     </>
                 ):(<p>LOADING...</p>)}
+
             </div>
         );
     }

@@ -17,13 +17,12 @@ class List extends Component {
     blogHandler=(item)=>{
         // sends ajax request
         this.props.history.push({
-            pathname: '/blog/'+item.id,
-            state: {id: item.id}
+            pathname: '/blog/'+item.id
         });
     }
 
     componentDidMount(){
-        axios.get('http://localhost:8000/posts/')
+        axios.get('http://localhost:8000/blog')
         .then(data=>{
             console.log(data.data);
             this.setState({
@@ -32,6 +31,7 @@ class List extends Component {
             })
         })
     }
+
 
     render() { 
         var list = this.state.listData? this.state.listData.map((item, index)=>{
